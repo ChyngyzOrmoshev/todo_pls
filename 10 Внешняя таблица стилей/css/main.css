@@ -1,0 +1,120 @@
+body {
+  width: 100%;
+  font-family: sans-serif;
+}
+
+header, footer {
+  width: 50%;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+section {
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+.hSection {
+  background: linear-gradient(160deg, white, rgb(87, 2, 87));
+  padding: 1%;
+  border: 0;
+  margin: 0;
+} 
+
+.header {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 0;
+}
+
+.hFooter {
+  width: 80%;
+  margin: 2% auto 10% auto;
+  text-align: center;
+  padding-top: 50%;
+  padding-bottom: 0;
+}
+
+.hParagraph {
+  font-size: 0.8em;
+  line-height: 200%;
+  margin-bottom: 5%;
+}
+
+.start {
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  padding: 2% 5% 2% 5%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background-color: mediumturquoise;
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+.sPhone {
+  background: linear-gradient(150deg, rgb(131, 5, 110), rgb(70, 1, 70));
+  display: flex;
+  text-align: end;
+  padding: 2% 10% 0 0;
+  color: aliceblue;
+}
+
+.phone {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10% 2% 2% 10%;
+  
+}
+
+.dTable {
+  width: 30%;
+  margin: 5% 8% 5% 8%;
+  display: inline-table;
+  padding: 2% 2% 2% 2%;
+}
+
+h2 {
+  color: rgb(233, 229, 229);
+}
+
+.experience {
+  background-color: rgb(68, 12, 94);
+  text-align: center;
+  padding: 5rem 5rem 5rem 5rem;
+  color: aliceblue;
+}
+
+.dTableInline {
+  padding: 2%;
+  text-align: center;  
+}
+.sTableInline {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 2% 2% 2% 2%;
+}
+
+h3, h4 {
+  color: rgb(77, 22, 129);
+}
+
+.social {
+  text-align: center;
+  background-color: darkgrey;
+  padding: 2% 2% 2% 2%;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  padding: 3% 3% 3% 3%;
+  text-transform: uppercase;
+  background-color: rgb(88, 88, 88);
+}
+

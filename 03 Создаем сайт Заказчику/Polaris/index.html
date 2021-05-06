@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О компании</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <img
+          src="images/polaris-logo.png"
+          alt="Логотип Фитнес Клуба Полярис"
+          width="437"
+          height="250"
+        />
+      </h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="#">Тренажеры</a></li>
+        <li><a href="#">Питание</a></li>
+        <li><a>Контакты</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Напишите нам</h2>
+
+      <form>
+        <p>
+          <label for="user_name">Имя</label>
+          <input type="text" placeholder="Иван" id="user_name" />
+        </p>
+        <p>
+          Ваши пожелания<br />
+          <label>
+            <input type="radio" name="fitness-type" value="lose" />
+            Хочу похудеть
+          </label>
+          <label>
+            <input type="radio" name="fitness-type" value="pump-up" />
+            Накачать бицепс
+          </label>
+        </p>
+
+        <p>
+          Что бы вы предпочли после тренировки?<br />
+          <label>
+            <input type="checkbox" name="sport-shake" value="Coctail" checked />
+            Спортивный коктейл
+          </label>
+          <label>
+            <input type="checkbox" name="coke" value="Coke" />
+            Хочу Колу
+          </label>
+          <label>
+            <input type="checkbox" name="nothing" value="none" disabled />
+            Ничего
+          </label>
+        </p>
+
+        <p>
+          <label for="appeal">Тема обращения</label>
+          <input id="appeal" type="text" placeholder="Приобрести абонемент" />
+        </p>
+        <p>
+          <label for="phone_number">Телефон</label>
+          <input id="phone_number" type="text" placeholder="+996-11-22-33" />
+        </p>
+        <p>
+          <label for="email"> Email</label>
+          <input id="email" type="text" placeholder="ivanov@mail.com" />
+        </p>
+        <p>
+          <label>
+            <textarea placeholder="Ваше сообщение"></textarea>
+            Сообщение
+          </label>
+        </p>
+        <button type="submit">Отправить сообщение</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; Фитнес-Клуб "Полярис". 2021 &reg;</p>
+    </footer>
+  </body>
+</html>
