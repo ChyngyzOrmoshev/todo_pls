@@ -516,6 +516,7 @@ html {
 }
 
 body {
+  max-width: 1920px;
   font-family: "Montserrat";
   font-style: normal;
   font-size: 16px;
@@ -529,9 +530,35 @@ body {
   margin: 0 auto;
 }
 
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__item {
+  margin-right: 35px;
+}
+
+.header__item:last-child {
+  margin-right: 0;
+}
+
+
+
 .header__logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   width: 201px;
   height: 40px;
+ 
 }
 
 .header__logo-pic {
@@ -540,6 +567,8 @@ body {
 }
 
 h1 {
+  margin-left: 20px;
+  padding: 0;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -547,4 +576,8 @@ h1 {
   line-height: 29px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+.main {
+  background-color: #f9f6f1;
 }
