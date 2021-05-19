@@ -1,0 +1,19 @@
+@import "../vars";
+
+.header {
+  background-color: $secondary-color;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    order: -1;
+  }
+
+  &__submenu {
+    display: none;
+    position: absolute;
+  }
+}
