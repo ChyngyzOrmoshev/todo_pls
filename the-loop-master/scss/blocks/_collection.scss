@@ -1,0 +1,36 @@
+.collection {
+
+  &__inner {
+    padding: 150px 0;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0 0 100px 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-dark;
+    text-align: center;
+  }
+
+  &__btn {
+    position: relative;
+    margin-top: 103px;
+    padding-right: 64px;
+  }
+
+  &__btn::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 8px;
+    right: 35px;
+    top: 21px;
+    background-image: url('../../images/arrow.svg');
+    background-position: center;
+  }
+
+}

@@ -1,0 +1,89 @@
+@import '../vars';
+
+.slider {
+  padding-top: 160px;
+  padding-bottom: 70px;
+  background-color: $secondary-color;
+
+  &__item-inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item-title {
+    margin: 0 0 35px 0;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    color: $dark;
+  }
+
+  &__item-text {
+    margin: 0 0 55px 0;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 67px;
+    letter-spacing: 0.04em;
+    color: $dark;
+  }
+
+  &__column {
+    width: 50%;
+    margin-bottom: 130px;
+  }
+
+  &__price {
+    position: absolute;
+    right: 0;
+    text-align: right;
+  }
+
+  &__price-old {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+  }
+
+  &__price-new {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 51px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: $special-accent;
+    text-transform: uppercase;
+  }
+
+  & .slick-dots {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 0;
+  }
+
+  & .slick-dots li {
+    margin: 0 7.5px;
+  }
+
+  & .slick-dots button {
+    border: none;
+    width: 40px;
+    height: 7px;
+    background-color: $btn-bg;
+    cursor: pointer;
+  }
+
+  & .slick-active button {
+    background-color: $accent-color;
+  }
+
+}

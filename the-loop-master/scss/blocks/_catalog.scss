@@ -1,0 +1,89 @@
+@import "../vars";
+
+.catalog {
+  &__top {
+    padding-top: 60px;
+    background-color: $secondary-color;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__top-column {
+    min-height: 250px;
+    background-image: url("../../images/cat-column-bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  &__top-column--mens {
+    background-position: bottom right 15px;
+  }
+
+  &__top-column--womens {
+    background-image: url("../../images/cat-column-women-bg.png");
+    background-position: bottom right 44px;
+  }
+
+  &__title {
+    margin: 0 0 25px 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    & span {
+      font-weight: 300;
+    }
+  }
+
+  &__descr {
+    margin: 0 0 40px 0;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__btn {
+    padding: 11px 30px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: $secondary-color;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item-title {
+    position: absolute;
+    bottom: 24px;
+    left: 30px;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: $dark;
+  }
+
+  &__item-title a {
+    color: $dark;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  &__item-img {
+    max-width: 277px;
+  }
+}

@@ -1,0 +1,39 @@
+@import '../vars';
+
+.header {
+  background-color: $secondary-color;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  &__nav {
+    max-width: 445px;
+    width: 100%;
+    margin-right: 19px;
+    order: -1;
+  }
+
+  &__logo {
+    margin-right: 90px;
+  }
+
+  &__links {
+    margin-right: auto;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: $accent-dark;
+    text-decoration: none;
+  }
+
+  &__link+&__link {
+    margin-left: 35px;
+  }
+}

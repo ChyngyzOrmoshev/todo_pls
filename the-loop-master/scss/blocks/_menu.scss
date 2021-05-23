@@ -1,0 +1,73 @@
+@import '../vars';
+
+.menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+
+  &__item+&__item {
+    margin-left: 35px;
+  }
+
+  &__item {
+    padding: 1em 12px 1em 0;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__item::after {
+    position: absolute;
+    right: 0;
+    top: 22px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid $dark;
+  }
+
+  &__link {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: $accent-dark;
+    text-decoration: none;
+  }
+
+  &__submenu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    z-index: 2;
+    margin: 0;
+    padding: 1em 0;
+    list-style: none;
+    background-color: $accent-color;
+
+    & li {
+      text-align: center;
+    }
+
+    & a {
+      display: block;
+      padding: 1em 0;
+      text-decoration: none;
+      color: $dark;
+      background-color: $accent-color;
+      transition: .3s;
+    }
+
+    & a:hover {
+      background-color: $secondary-color;
+    }
+  }
+
+  &__item:hover &__submenu{
+    display: block;
+  }
+}
