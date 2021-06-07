@@ -21,15 +21,15 @@
     content: "";
     width: 24px;
     height: 24px;
-    background-image: url('../../images/vk.svg');
+    background-image: url('../images/vk.svg');
     background-repeat: no-repeat;
   }
 
   &__link--fb::before {
-    background-image: url('../../images/fb.svg');
+    background-image: url('../images/fb.svg');
   }
 
   &__link--in::before {
-    background-image: url('../../images/in.svg');
+    background-image: url('../images/in.svg');
   }
 }

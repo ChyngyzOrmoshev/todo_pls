@@ -369,7 +369,7 @@ body {
 
 .catalog__top-column {
   min-height: 250px;
-  background-image: url("../../images/cat-column-bg.png");
+  background-image: url("../images/cat-column-bg.png");
   background-repeat: no-repeat;
   background-position: bottom right;
 }
@@ -379,7 +379,7 @@ body {
 }
 
 .catalog__top-column--womens {
-  background-image: url("../../images/cat-column-women-bg.png");
+  background-image: url("../images/cat-column-women-bg.png");
   background-position: bottom right 44px;
 }
 
@@ -535,6 +535,8 @@ body {
   text-align: center;
   color: #000;
   text-decoration: none;
+  position: relative;
+  z-index: 1;
 }
 
 .subscribe__inner {
@@ -697,14 +699,14 @@ body {
   content: "";
   width: 24px;
   height: 24px;
-  background-image: url("../../images/vk.svg");
+  background-image: url("../images/vk.svg");
   background-repeat: no-repeat;
 }
 
 .socials__link--fb::before {
-  background-image: url("../../images/fb.svg");
+  background-image: url("../images/fb.svg");
 }
 
 .socials__link--in::before {
-  background-image: url("../../images/in.svg");
+  background-image: url("../images/in.svg");
 }

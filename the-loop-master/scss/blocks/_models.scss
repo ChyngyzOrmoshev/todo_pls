@@ -48,6 +48,8 @@
     text-align: center;
     color: $dark;
     text-decoration: none;
+    position: relative;
+    z-index: 1;
   }
 
 }
