@@ -1,0 +1,48 @@
+.header {
+    background-color: #ddd;
+
+    .navbar {
+        padding: 1em 0;
+    }
+
+    .nav-link {
+        color: white;
+        border-radius: .4em;
+        background-color: #333;
+    }
+
+    .nav-item+.nav-item {
+        margin-left: 1em;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+}
+
+.logo {
+    padding: 1em;
+    font-size: 2em;
+    text-transform: uppercase;
+    background-color: #ccc;
+    border-radius: .5em;
+    color: black;
+}
+
+@media (max-width: 992px) {
+
+    .header {
+        .navbar-nav {
+            margin-top: 1em;
+            text-align: center;
+        }
+
+        .nav-item+.nav-item {
+            margin-left: 0;
+        }
+
+        .nav-link {
+            border-radius: 0;
+        }
+    }
+}
