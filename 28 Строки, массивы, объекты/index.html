@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let myString = "иВан";
+
+      let result =
+        myString.toUpperCase()[0] +
+        myString.toLowerCase().slice(1, myString.length);
+      console.log(result);
+
+      let value = "$120";
+
+      let cost = value.substring(1, value.length);
+      console.log(cost);
+
+      let fruits = ["Яблоко", "Абрикос", "Апельсин"];
+
+      let fruitsEnd = fruits.pop(); // удаляет последний индекс из даннаго массива
+
+      console.log("Вы удалили " + fruitsEnd);
+
+      let fruitsStart = fruits.shift(); // удаляет первый индекс из данного массива
+
+      console.log([fruitsStart, fruitsEnd]);
+    </script>
+  </body>
+</html>
